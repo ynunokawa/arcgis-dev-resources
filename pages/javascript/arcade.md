@@ -1,6 +1,6 @@
-[Arcade](https://developers.arcgis.com/arcade/) とは ArcGIS プラットフォームで使用するために作られた軽量でセキュアな条件式のためのスクリプト言語です。
+<a href="https://developers.arcgis.com/arcade/" target="_blank">Arcade</a> とは ArcGIS プラットフォームで使用するために作られた軽量でセキュアな条件式のためのスクリプト言語です。
 他の一般的な式言語のように、数学的な計算や評価ロジックの命令語を利用できます。
-ArcGIS プラットフォームにおける独自のデータ可視化とラベル表現の作成のためにデザインされており、独自の命令語を ArcGIS Pro や ArcGIS Online、ArcGIS Runtime SDK、ArcGIS API for JavaScript で編集・共有・実行することができます。
+ArcGIS プラットフォームにおける独自のデータ可視化とラベル表現の作成のためにデザインされており、独自の命令語を <a href="https://www.esrij.com/products/arcgis-pro/" target="_blank">ArcGIS Pro</a> や <a href="https://www.esrij.com/products/arcgis-online/" target="_blank">ArcGIS Online</a>、<a href="https://developers.arcgis.com/arcgis-runtime/" target="_blank">ArcGIS Runtime SDK</a>、<a href="https://developers.arcgis.com/javascript/" target="_blank">ArcGIS API for JavaScript</a> で編集・共有・実行することができます。
 
 Arcade が他のスクリプト言語に比べてユニークなのは、ジオメトリの関数を含んでいるところです。
 初期のリリースでは、ジオメトリの作成と参照が可能です。
@@ -11,8 +11,8 @@ Arcade が他のスクリプト言語に比べてユニークなのは、ジオ�
 
 Arcade のシンタックスは JavaScript ライクに変数の宣言やロジックの実行、関数の記述などができます。
 しかし、二つの言語間にはいくつか異なる部分があります。
-記述方法の詳細については、Arcade ドキュメント（英語）をご参照ください。
-また、[ArcGIS Arcade Playground](https://developers.arcgis.com/arcade/playground/) では独自のスクリプトをテスト実行するための環境を提供していますので、アクセスしてみてください。
+記述方法の詳細については、<a href="https://developers.arcgis.com/arcade/" target="_blank">Arcade ドキュメント（英語）</a>をご参照ください。
+また、<a href="https://developers.arcgis.com/arcade/playground/" target="_blank">ArcGIS Arcade Playground</a> では独自のスクリプトをテスト実行するための環境を提供していますので、アクセスしてみてください。
 
 Arcade には外部データにアクセスするためのグローバル変数が用意されています。
 `$feature` というグローバル変数は、フィーチャ レイヤー内のフィーチャが持つフィールド値にアクセスするために使用します。
@@ -39,20 +39,20 @@ ArcGIS API 4.2 for JavaScript では、ビジュアライゼーションのプ�
 
 ### ビジュアライゼーション
 
-ビジュアライゼーション プロファイルにおいて、Arcade を使ってランタイムで [`FeatureLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) (フィーチャ レイヤー) あるいは [`SceneLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) (シーン レイヤー) 内の各フィーチャが持つ値を計算することができます。
+ビジュアライゼーション プロファイルにおいて、Arcade を使ってランタイムで <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html" target="_blank">`FeatureLayer`</a> (フィーチャ レイヤー) あるいは <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html" target="_blank">`SceneLayer`</a> (シーン レイヤー) 内の各フィーチャが持つ値を計算することができます。
 また、データドリブンな可視化のための基盤として、それらの値を使用することができます。
 これは、レイヤー内の単一フィールド値をもとにしたデータ ビジュアライゼーションを作成するための別のアプローチになります。
-これによって、Arcade 命令語は `field`/`normarizationField` あるいは JavaScript 関数の代わりに [`ClassBreaksRenderer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression) (数値分類) や [`UniqueValueRenderer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression) (個別値分類)、その他の可視化変数 ([`color`](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#ColorVisualVariable), [`size`](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#SizeVisualVariable), [`opacity`](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#OpacityVisualVariable), [`rotation`](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#RotationVisualVariable)) の `valueExpression` プロパティに渡されます。
+これによって、Arcade 命令語は `field`/`normarizationField` あるいは JavaScript 関数の代わりに <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression" target="_blank">`ClassBreaksRenderer`</a> (数値分類) や <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression" target="_blank">`UniqueValueRenderer`</a> (個別値分類)、その他の可視化変数 (<a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#ColorVisualVariable" target="_blank">`color`</a>, <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#SizeVisualVariable" target="_blank">`size`</a>, <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#OpacityVisualVariable" target="_blank">`opacity`</a>, <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#RotationVisualVariable" target="_blank">`rotation`</a>) の `valueExpression` プロパティに渡されます。
 
 
 > Arcade は `FeatureLayer` と `SceneLayer` におけるビジュアライゼーションの作成のみサポートします。
 > 
-> `ClassBreaks` と `UniqueValueRenderer` を利用できる他のレイヤー (例えば、[`MapImageLayer`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html)) は Arcade をサポートしていません。
+> `ClassBreaks` と `UniqueValueRenderer` を利用できる他のレイヤー (例えば、<a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html" target="_blank">`MapImageLayer`</a>) は Arcade をサポートしていません。
 
 `ClassBreaksRenderer` あるいはその他の可視化変数を使用する際、命令語は必ず数値を評価してください。
 `UniqueValueRenderer` は文字列と数値のいずれも評価して構いません。
 
-以下の例では、Arcade 命令語が `UniqueValueRenderer` の [`valueExpression`](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression) プロパティを使用しています。
+以下の例では、Arcade 命令語が `UniqueValueRenderer` の <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression" target="_blank">`valueExpression`</a> プロパティを使用しています。
 アメリカの州を表すフィーチャ レイヤーのためにビジュアライゼーションを作成します。
 このサービスは各州における共和党、民主党、無所属に対する得票数という 3 つのフィールドを持ちます。
 そこで、得票数で勝った党を各州で可視化したいとします。
@@ -131,4 +131,4 @@ var opacityVV = {
 renderer.visualVariables = [ opacityVV ];
 ```
 
-実際にビジュアライゼーションを行った結果はサンプル アプリ ([Create a custom visualization using Arcade](https://developers.arcgis.com/javascript/latest/sample-code/visualization-arcade/index.html)) で確認してみてください。
+実際にビジュアライゼーションを行った結果はサンプル アプリ (<a href="https://developers.arcgis.com/javascript/latest/sample-code/visualization-arcade/index.html" target="_blank">Create a custom visualization using Arcade</a>) で確認してみてください。
